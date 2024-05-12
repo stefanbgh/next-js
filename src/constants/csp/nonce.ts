@@ -1,0 +1,1 @@
+export const nonce = Buffer.from(crypto.randomUUID()).toString('base64');

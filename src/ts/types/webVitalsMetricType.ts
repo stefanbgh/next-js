@@ -1,0 +1,1 @@
+export type webVitalsMetricType = "TTFB" | "FCP" | "LCP" | "FID" | "CLS" | "INP";

@@ -1,0 +1,17 @@
+.home {
+    @apply w-screen h-screen overflow-hidden relative;
+
+    &__button {
+        @apply py-1.5 px-3 m-2 rounded-md bg-red-400 hover:bg-red-500 transition-all text-white absolute z-10;
+    }
+
+    &__image {
+        @apply object-cover;
+    }
+}
+
+.not {
+    &-found {
+        @apply w-full h-screen flex justify-center items-center flex-col;
+    }
+}

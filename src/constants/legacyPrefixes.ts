@@ -1,0 +1,1 @@
+export const legacyPrefixes: string[] = ["/docs", "/blog"];

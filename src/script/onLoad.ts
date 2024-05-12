@@ -1,0 +1,1 @@
+export const onLoad = () => console.log("Script has loaded");
