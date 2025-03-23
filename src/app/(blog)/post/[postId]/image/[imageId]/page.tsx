@@ -1,5 +1,3 @@
-import { notFound } from "next/navigation";
-
 interface IProps {
 	params: Promise<{ postId: string; imageId: string }>;
 }
