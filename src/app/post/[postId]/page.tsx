@@ -1,9 +1,9 @@
 interface IProps {
-	params: Promise<{ id: string }>;
+	params: Promise<{ postId: string }>;
 }
 
 export default async function SinglePost({ params }: IProps) {
-	const id = (await params).id;
+	const id = (await params).postId;
 
 	return (
 		<section>
