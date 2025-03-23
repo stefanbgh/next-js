@@ -1,3 +1,6 @@
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,5 +13,11 @@ export default function PostLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	return <div>{children}</div>;
+	return (
+		<div>
+			<Header />
+			{children}
+			<Footer />
+		</div>
+	);
 }
