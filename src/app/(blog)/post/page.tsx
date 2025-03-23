@@ -1,9 +1,17 @@
+import Search from "@/components/Search/Search";
 import Link from "next/link";
 
-export default function Post() {
+export default async function Post({
+	searchParams,
+}: {
+	searchParams: Promise<URLSearchParams>;
+}) {
+	const query = await searchParams;
+
 	return (
 		<section>
 			<h2>Post</h2>
+			<Search query={query} />
 			<ul>
 				<li className="border py-4 px-6 w-fit mb-2">
 					<p>Post 1</p>
