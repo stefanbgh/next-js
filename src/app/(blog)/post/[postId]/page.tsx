@@ -4,6 +4,14 @@ interface IProps {
 	params: Promise<{ postId: string }>;
 }
 
+export const generateMetadata = async ({ params }: IProps) => {
+	const id = (await params).postId;
+
+	return {
+		title: `Post ${id}`,
+	};
+};
+
 export default async function SinglePost({ params }: IProps) {
 	const id = (await params).postId;
 	const postId = parseInt(id);
