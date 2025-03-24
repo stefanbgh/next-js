@@ -7,8 +7,13 @@ export default async function Post({
 	searchParams: Promise<URLSearchParams>;
 }) {
 	const query = await searchParams;
+	const num = Math.floor(Math.random() * 10) + 1;
 
 	await new Promise((resolve) => setTimeout(resolve, 1000));
+
+	if (num === 1) {
+		throw new Error("Unexpected error occurred");
+	}
 
 	return (
 		<section>
