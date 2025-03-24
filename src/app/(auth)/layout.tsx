@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 	description: "The authentication page",
 };
 
-export default function PostLayout({
+export default function AuthLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
