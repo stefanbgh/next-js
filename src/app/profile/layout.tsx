@@ -5,6 +5,7 @@ interface IProps {
 	image: ReactNode;
 	notifications: ReactNode;
 	settings: ReactNode;
+	signin: ReactNode;
 }
 
 export default function ProfileLayout({
@@ -12,15 +13,22 @@ export default function ProfileLayout({
 	image,
 	notifications,
 	settings,
+	signin,
 }: IProps) {
-	return (
-		<section>
-			<section className="mb-4">{children}</section>
-			<section className="flex gap-2 flex-col">
-				{image}
-				{notifications}
-				{settings}
+	const isLoggedIn = true;
+
+	if (isLoggedIn) {
+		return (
+			<section>
+				<section className="mb-4">{children}</section>
+				<section className="flex gap-2 flex-col">
+					{image}
+					{notifications}
+					{settings}
+				</section>
 			</section>
-		</section>
-	);
+		);
+	}
+
+	return signin;
 }
