@@ -15,20 +15,14 @@ export default function ProfileLayout({
 	settings,
 	signin,
 }: IProps) {
-	const isLoggedIn = true;
-
-	if (isLoggedIn) {
-		return (
-			<section>
-				<section className="mb-4">{children}</section>
-				<section className="flex gap-2 flex-col">
-					{image}
-					{notifications}
-					{settings}
-				</section>
+	return (
+		<section>
+			<section className="mb-4">{children}</section>
+			<section className="flex gap-2 flex-col">
+				{image}
+				{notifications}
+				{settings}
 			</section>
-		);
-	}
-
-	return signin;
+		</section>
+	);
 }
