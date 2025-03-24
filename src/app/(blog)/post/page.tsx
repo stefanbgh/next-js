@@ -8,6 +8,8 @@ export default async function Post({
 }) {
 	const query = await searchParams;
 
+	await new Promise((resolve) => setTimeout(resolve, 1000));
+
 	return (
 		<section>
 			<h2>Post</h2>
