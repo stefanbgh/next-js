@@ -1,4 +1,6 @@
-export const articles = [
+import { IArticle } from "@/typescript/interfaces/IArticle";
+
+export const articles: IArticle[] = [
 	{
 		id: 1,
 		title: "Article 1",
