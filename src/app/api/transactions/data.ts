@@ -1,4 +1,6 @@
-export const transactions = [
+import { ITransaction } from "@/typescript/interfaces/ITransaction";
+
+export const transactions: ITransaction[] = [
 	{
 		id: 1,
 		status: "pending",
