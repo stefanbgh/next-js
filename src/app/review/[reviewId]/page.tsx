@@ -2,6 +2,8 @@ interface IProps {
 	params: Promise<{ reviewId: string }>;
 }
 
+export const dynamicParams = false; // default true
+
 export async function generateStaticParams() {
 	return [{ reviewId: "1" }, { reviewId: "2" }, { reviewId: "3" }];
 }
