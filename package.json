@@ -1,7 +1,8 @@
 {
 	"name": "next-js",
 	"version": "0.1.0",
-	"private": true,
+	"private": false,
+	"author": "Stefan Blagojevic",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
